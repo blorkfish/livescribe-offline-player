@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)http://www.livescribe.com/int/pdf/player/lsnotesdesktop.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Livescribe Player</title>
+	    <!--Copyright © 2007-2013 Livescribe, Inc. All rights reserved.-->
+
+	    
+	    <!--[if IE]>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	    <![endif]-->
+
+	    <meta name="ROBOTS" content="NONE">
+	    <meta name="viewport" content="user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="HandheldFriendly" content="true">
+
+	    <link rel="stylesheet" type="text/css" href="./Livescribe Player_files/style.css">
+
+	    <script type="text/javascript" async="" src="./Livescribe Player_files/ga.js"></script><script type="text/javascript" async="" src="./Livescribe Player_files/mixpanel-2.2.min.js"></script><script src="./Livescribe Player_files/jquery.min.js" type="text/javascript"></script>
+	    <script type="text/javascript" src="./Livescribe Player_files/google.fastbutton.js"></script>
+	    <!--<script type="text/javascript" src="../scripts/player/com/plugins/jquery.google.fastbutton.js"></script>-->
+	    <!--<script type="text/javascript" src="../scripts/player/com/plugins/jquery.touchSwipe.js"></script>
+	    <script type="text/javascript" src="../scripts/player/com/livescribe/lsnotes/audio/WebAudio.js"></script>-->
+        <script type="text/javascript" src="./Livescribe Player_files/Collections.NamedList.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/EventHandling.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/CustomEventHandling.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/Animation.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/Animations.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/KeyFrameAnimation.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/Base64Decoder.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/inflate.min.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/BinaryReader.js"></script>
+<!--        <script type="text/javascript" src="../scripts/player/com/livescribe/lsnotes/utility/Callback.js"></script>
+	    <script type="text/javascript" src="../scripts/player/com/livescribe/lsnotes/utility/CanvasProgressBar.js"></script>-->
+        <script type="text/javascript" src="./Livescribe Player_files/Utility.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/EnvironmentManager.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/MipMap.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/Mixpanel.js"></script>
+<!--        <script type="text/javascript" src="../scripts/player/com/livescribe/lsnotes/utility/RESTDictionaryLoader.js"></script>
+        <script type="text/javascript" src="../scripts/player/com/livescribe/lsnotes/utility/StrokeRenderer.js"></script>-->
+        <script type="text/javascript" src="./Livescribe Player_files/WebContext.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/EnvironmentManager(1).js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/LocalFileLoader.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/RequestManager.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/PDFPlusCatalog.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/PDFPlusAudioCatalog.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/PDFPlusAssetBase.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/PDFPlusImage.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/PDFPlusInkML.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/PDFPlusAudioStream.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/PDFPlusDocument.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/PDFPlusPage.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/PDFPlusSession.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/PDFPlusDocumentParser.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/inkMLInkSourceData.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/inkMLImageData.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/inkMLAudioData.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/inkMLTraceData.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/inkMLDocument.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/inkMLParser.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/StrokeMLData.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/StrokeMLParser.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/AudioMLParser.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/Local.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/Point.js"></script>
+	    <script type="text/javascript" src="./Livescribe Player_files/Stroke.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/StrokeCollection.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/Session.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/StrokeSession.js"></script>
+	    <script type="text/javascript" src="./Livescribe Player_files/AudioSession.js"></script>
+	    <script type="text/javascript" src="./Livescribe Player_files/PageInstance.js"></script>
+	    <script type="text/javascript" src="./Livescribe Player_files/PageTemplate.js"></script>
+	    <script type="text/javascript" src="./Livescribe Player_files/PageImage.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/PencastData.js"></script>
+	    <script type="text/javascript" src="./Livescribe Player_files/PencastBase.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/LocalPDFPencast.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/RemoteClassicPencast.js"></script>
+        <!--<script type="text/javascript" src="../scripts/player/com/livescribe/lsnotes/pencastplayer/RemotePDFPencast.js"></script> -->
+        <script type="text/javascript" src="./Livescribe Player_files/LaunchInstructions.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/Trigger.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/Modal.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/TrayControl.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/ColorPicker.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/Button.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/SettingsToggle.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/Panel.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/LaunchMessage.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/Slider.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/KeyControls.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/CanvasControl.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/PageIndicator.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/PlaybackProgressIndicator.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/Audio.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/AudioPlayer.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/WebAudioPlayer.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/translate.js"></script>
+        <script type="text/javascript" src="./Livescribe Player_files/Player.js"></script>
+        <!--<script type="text/javascript" src="../scripts/player/PlayerMain.js"></script>-->
+        <!--<script type="text/javascript" src="../scripts/player/com/livescribe/lsnotes/pencastplayer/Document.js"></script>-->
+        <!--<script type="text/javascript" src="../scripts/player/com/plugins/jquery-1.7-externs.js"></script>-->
+        <!--<script type="text/javascript" src="../player-compiled.js"></script> -->
+        <!--<script type="text/javascript" src="../player/main.js"></script>-->
+
+        <script type="text/javascript">
+            //$('.no-scroll').on('touchmove', function (event) { event.preventDefault(); }, false);
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-17614433-7']);
+            _gaq.push(['_setDomainName', 'none']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+
+
+</head>
+
+    <body>
+
+        <!-- Canvas Start  -->
+        <div id="mCanvasContainer">
+	        <canvas id="mBackgroundCanvas" width="417.40426887543805" height="528" style="display: block; left: 164.797865562281px;"></canvas>
+	        <canvas id="mMainCanvas" width="417.40426887543805" height="528" style="left: 164.797865562281px;">No support for canvas</canvas>
+	    </div>
+        <!-- Canvas End  -->
+
+        <!-- Top Bar Start  -->
+        <div id="mTopBar" class="no-scroll">
+
+            <!-- Livescribe Logo Start  -->
+            <div id="mLivescribeLogo"></div>
+            <!-- Livescribe Logo End  -->
+
+			<!-- PlaySpeed Controls Start  -->
+			<div id="mPlaySpeed">
+				<ul>
+        	<li onclick="javascript:page.Player.PlaySpeed(0.5)" data-speed="0.5">0.5x</li>
+        	<hr align="left">
+        	<li onclick="javascript:page.Player.PlaySpeed(1)" data-speed="1">1x</li>
+        	<hr align="left">
+        	<li onclick="javascript:page.Player.PlaySpeed(2)" data-speed="2">2x</li>
+        	<hr align="left">
+        	<li onclick="javascript:page.Player.PlaySpeed(3)" data-speed="3">3x</li>
+        </ul>
+			</div>
+			<!-- PlaySpeed Controls End  -->
+
+            <!-- Player Controls Bar Start  -->
+            <div id="mTopBarPageControlsAndPageInfo" class="clearfix" style="display: block;">
+
+                <!-- Pagination Controls Start  -->
+			    <div id="mPageControls">
+                    <div id="mJumpPageForwardButton" class="notClicked" style="display: block;"></div>
+
+                    <!-- Pagination Display Start  -->
+                	<div id="mTopBarRelativePage">
+                	    <div style="display:inline-block; margin-top: 4.5px; text-align:right; width:45px; height:26px;">Page</div>
+                	    <div id="mCurrentSessionPageText">1</div>
+                	    <div id="mTotalSessionPageText">/ 2</div>
+                	</div>
+                	<!-- Pagination Display End  -->
+
+                    <div id="mJumpPageBackButton" class="active" style="display: block;"></div>
+                </div>
+                <!-- Pagination Controls End  -->
+
+                <!-- Zoom Controls Start  -->
+                <div id="mZoomInButton" class="active" style="right: 35px; display: block;">
+                </div>
+
+                <div id="mZoomOutButton" class="active" style="right: 78px; display: block;">
+                </div>
+                <!-- Zoom Controls End  -->
+
+            </div>
+            <!-- Player Controls Bar End  -->
+
+        </div>
+        <!-- Top Bar End  -->
+
+        <!-- Settings Button Start  -->
+                <div id="mSettingsButton" class="notClicked" style="display: block;">
+			    </div>
+                <!-- Settings Button End  -->
+
+
+        <!-- Settings Controls Start  -->
+            <div id="mSettings" style="display: none; background-position: 0% 0%;">
+                <a id="release-notes" target="_blank" href="https://www.livescribe.com/en-us/releasenotes/index.html#Player">About Livescribe Player Beta</a>
+                <hr align="left">
+				<input id="mPreviewStroke" name="mPreviewStroke" checked="checked" type="checkbox" value="PreviewStroke" tabindex="1">
+                <label for="mPreviewStroke"><span></span>Display Preview Strokes</label>
+				<hr align="left">
+				<input id="mEnableAutoPage" name="mEnableAutoPage" checked="checked" type="checkbox" value="DisableAutoPage" tabindex="1">
+                <label for="mEnableAutoPage"><span></span>Enable Auto Page Turn</label>
+				<hr align="left">
+				<p style="margin:8px 0 5px;">Select Stroke Color</p>
+				<div id="mColorPickerVisable">
+					<div class="ColorBlock active">
+						<div class="Block" id="foreground-color-0" style="background-color:#339900; border-color:#FFFFFF;"></div>
+						<div class="Block" id="background-color-0" style="background-color:#000000; border-color:#FFFFFF;"></div>
+					</div>
+					<div class="ColorBlock active">
+						<div class="Block" id="foreground-color-1" style="background-color:#cc0000; border-color:#cc0000;"></div>
+						<div class="Block" id="background-color-1" style="background-color:#330000; border-color:#330000;"></div>
+					</div>
+					<div class="ColorBlock active">
+						<div class="Block" id="foreground-color-2" style="background-color:#0033ff; border-color:#0033ff;"></div>
+						<div class="Block" id="background-color-2" style="background-color:#000099; border-color:#000099;"></div>
+					</div>
+					<div class="ColorBlock active">
+						<div class="Block" id="foreground-color-3" style="background-color:#ff6633; border-color:#ff6633;"></div>
+						<div class="Block" id="background-color-3" style="background-color:#663300; border-color:#663300;"></div>
+					</div>
+					<div class="ColorBlock active">
+						<div class="Block" id="foreground-color-4" style="background-color:#33ccff; border-color:#33ccff;"></div>
+						<div class="Block" id="background-color-4" style="background-color:#003366; border-color:#003366;"></div>
+					</div>
+					<div class="ColorBlock active">
+						<div class="Block" id="foreground-color-5" style="background-color:#9933cc; border-color:#9933cc;"></div>
+						<div class="Block" id="background-color-5" style="background-color:#330066; border-color:#330066;"></div>
+					</div>
+					<div class="ColorBlock active">
+						<div class="Block" id="foreground-color-6" style="background-color:#cc3399; border-color:#cc3399;"></div>
+						<div class="Block" id="background-color-6" style="background-color:#330033; border-color:#330033;"></div>
+					</div>
+				</div>
+			</div>
+            <!-- Settings Controls End  -->
+
+
+
+
+
+
+        <!-- Playback Controls Start  -->
+        <div id="mPlayer" class="no-scroll" style="display: block;">
+            <!--<div style="z-index:1; width:100%;">-->
+            <div id="mPlayerBot">
+                <div id="mPlayButton" class="active" style="display: block;"></div>
+                <div id="mPauseButton" class="active" style="display: none;"></div>
+                <div id="mAudioPositionText" style="display: inline-block;">00:00</div>
+                <div id="mSlideBarContainer">
+                    <div id="mSliderBar" style="display: block;">
+                        <div id="mSliderBarProgress" style="width: 0px;"></div>
+                        <div id="mSliderBarScrubber" style="display: block; left: -14px;">
+                            <div id="mSliderBarScrubberIcon"></div>
+                        </div>
+                    </div>
+                    <!-- <div id="mSliderBarThumb"></div> -->
+                </div>
+                <!--<div id="mOfText">of</div>-->
+                <div id="mJumpForwardButton" class="active" style="display: block;"></div>
+                <div id="mJumpBackButton" class="active" style="display: block;"></div>
+                <div id="mAudioDurationText" style="display: inline-block;">- 24:29</div>
+            </div>
+
+            <!-- PlaySpeed Button Start  -->
+			<div id="mPlaySpeedButton" class="active" style="display: block;"></div>
+			<!-- PlaySpeed Button End  -->
+
+            <!-- Unused Start -->
+            <div style="display:none; width:2.5px"></div>
+            <div style="display:none; width:2.5px"></div>
+            <div id="mVolumeButton" style="display:none; z-index:0; width:18px; height:18px; &lt;!--background-image:url(&#39;../images/player/volumebutton.png&#39;);--&gt;"></div>
+            <div id="mGreyPreviewButton" style="display:none; z-index:0; width:25px; height:18px; &lt;!--background-image:url(&#39;../images/player/strokegreypreview.png&#39;);--&gt;"></div>
+            <div id="mNoPreviewButton" style="display:none; z-index:0; width:25px; height:18px; &lt;!--background-image:url(&#39;../images/player/strokenopreview.png&#39;);--&gt;"></div>
+            <!-- Unused End -->
+
+            <!-- Thumbnail Pane Start -->
+            <div id="mThumbnailPaneOpen" onclick="OpenThumbnailPane()" style="display: none;"></div>
+            <div style="position:absolute; left: 0px; top:0; width:100%;">
+                <div id="mThumbnailPane">
+                    <div id="mThumbnailPaneClose" onclick="CloseThumbnailPane()" style="display: none;"></div>
+                </div>
+            </div>
+            <!-- Thumbnail Pane End -->
+
+        </div>
+        <!-- Playback Controls End  -->
+
+
+        <!-- Click Overlay Start  -->
+		<div id="mClickOverlay" class="no-scroll"></div>
+        <!-- Click Overlay Start  -->
+
+
+        <!-- Smart Banner Module Start  -->
+        <div id="smart-banner-module">
+            <p id="smart-banner-copy">Smart Banner</p>
+        </div>
+        <!-- Smart Banner Module End  -->
+
+        <!-- Message Module Start  -->
+        <div id="launch-message-module" style="display: none;">
+            <p id="launch-message-copy">Livescribe Player can play back your downloaded Livescribe PDF. Download your Livescribe PDF, then drop it here.<br><br></p>
+            <p id="launch-message-copy-2"></p>
+        </div>
+        <!-- Message Module End  -->
+
+
+        <!-- File Load Overlay Start  -->
+        <div id="file-load-module" dropzone="true" style="display: none;">
+            <div id="file-load-dropzone-section-container" class="clearfix">
+                <div id="file-load-dropzone-section" class="normal">
+                    <p id="file-load-dropzone-instructions-copy">Download your Livescribe PDF, then drop it here.</p>
+                    <div id="file-load-dropzone" dropzone="true"></div>
+                </div>
+                <div id="file-load-separator">
+                </div>
+            </div>
+            <div class="file-load-input-section">
+                <p id="file-load-input-instructions-copy">or</p>
+                <div class="file-load-input-button">
+                	<input id="file-load-input-element" type="file" onfocus="if(this.blur)this.blur()">
+                </div>
+            </div>
+        </div>
+        <!-- File Load Overlay Start  -->
+
+
+        <!-- Smart Banner Module Start  -->
+        <div id="paperless-icon-module"></div>
+        <!-- Smart Banner Module End  -->
+
+        <!-- Busy Overlay Start  -->
+		<div id="overlay" style="display: none;">
+			 <div id="overlayContent">
+			 	<div id="header"><pre></pre></div>
+				<img id="mBackground" alt="Background Image" src="./Livescribe Player_files/ls_player_load_screen_2014.gif">
+				<p id="overlayBodyText"></p>
+				<div id="footer"><pre></pre></div>
+			 </div>
+
+		</div>
+
+        <!-- Busy Overlay End  -->
+
+      <div id="alert-overlay" data-message-holder=".message-container">
+        <div id="alert-backdrop"></div>
+        <div id="alert-anchor">
+           <div id="alert" class="message-container">This player can only load PDFs created by Livescribe. Please select a Livescribe PDF.</div>
+           <img class="close_button" src="./Livescribe Player_files/close_button.jpg">
+        </div>
+      </div>
+
+
+
+	    <script type="text/javascript">
+
+	        var LiveScribe = LiveScribe || {};
+
+
+	        LiveScribe.Page = function () {
+	            this.Player = null;
+
+	            LiveScribe.Events.AddHandler(window, 'load', LiveScribe.Events.CreateDelegate(this, this.PageLoadHandler));
+              LiveScribe.Events.AddHandler(document.querySelector('#alert-backdrop'), 'click', function() {
+                page.Player.AlertModal.Hide();
+              });
+
+              LiveScribe.Events.AddHandler(document.querySelector('#alert-overlay .close_button'), 'click', function() {
+                page.Player.AlertModal.Hide();
+              });
+	        }
+
+	        LiveScribe.Page.prototype.PageLoadHandler = function () {
+	            this.Player = new LiveScribe.Player();
+
+	            this.Player.BusyModal = new LiveScribe.UI.Modal(document.getElementById('overlay'));
+	            this.Player.MessageModule = new LiveScribe.UI.LaunchMessage(document.getElementById('launch-message-copy'), document.getElementById('launch-message-copy-2'), document.getElementById('launch-message-module'));
+	            this.Player.SmartBannerModule = new LiveScribe.UI.Modal(document.getElementById('smart-banner-module'));
+	            this.Player.FileLoadModule = new LiveScribe.UI.Modal(document.getElementById('file-load-module'));
+	            this.Player.FileLoadDropZoneModule = new LiveScribe.UI.Modal(document.getElementById('file-load-dropzone-section-container'));
+	            this.Player.PageInfoModule = new LiveScribe.UI.Modal(document.getElementById('mTopBarPageControlsAndPageInfo'));
+	            this.Player.PlaybackControlsModule = new LiveScribe.UI.Modal(document.getElementById('mPlayer'));
+	            this.Player.PaperlessIconModule = new LiveScribe.UI.Modal(document.getElementById('paperless-icon-module'));
+
+	            this.Player.PageForwardButton = new LiveScribe.UI.ButtonControl(document.getElementById('mJumpPageForwardButton'));
+	            this.Player.PageForwardButton.OnButtonClick = LiveScribe.Events.CreateDelegate(this.Player, this.Player.PageForwardButtonClickHandler);
+
+	            this.Player.PageBackButton = new LiveScribe.UI.ButtonControl(document.getElementById('mJumpPageBackButton'));
+	            this.Player.PageBackButton.OnButtonClick = LiveScribe.Events.CreateDelegate(this.Player, this.Player.PageBackButtonClickHandler);
+
+	            this.Player.ZoomInButton = new LiveScribe.UI.ButtonControl(document.getElementById('mZoomInButton'));
+	            this.Player.ZoomInButton.OnButtonClick = LiveScribe.Events.CreateDelegate(this.Player, this.Player.ZoomInButtonClickHandler);
+
+	            this.Player.ZoomOutButton = new LiveScribe.UI.ButtonControl(document.getElementById('mZoomOutButton'));
+	            this.Player.ZoomOutButton.OnButtonClick = LiveScribe.Events.CreateDelegate(this.Player, this.Player.ZoomOutButtonClickHandler);
+
+              this.Player.PlaySpeedButton = new LiveScribe.UI.ButtonControl(document.getElementById('mPlaySpeedButton'));
+
+              this.Player.PlaySpeedPanel = new LiveScribe.UI.Modal(document.getElementById('mPlaySpeed'));
+              this.Player.PlaySpeedPanel.AddTrigger(new LiveScribe.UI.Trigger(document.getElementById('mPlaySpeedButton'), 'click'));
+
+	            this.Player.SettingsButton = new LiveScribe.UI.ButtonControl(document.getElementById('mSettingsButton'));
+
+              this.Player.SettingsPanel = new LiveScribe.UI.Modal(document.getElementById('mSettings'));
+	            this.Player.SettingsPanel.AddTrigger(new LiveScribe.UI.Trigger(document.getElementById('mSettingsButton'), 'click'));
+
+	            this.Player.AlertModal = new LiveScribe.UI.Modal(document.getElementById('alert-overlay'));
+
+	            /*this.Player.SettingsPanel = new LiveScribe.UI.VerticalTrayControl(document.getElementById('mSettings'), LiveScribe.UI.VerticalTrayControlAnchorDirection.TOP, LiveScribe.UI.TrayStartState.CLOSED, 261, 300, 20, LiveScribe.Animation.AccelerationType.QUADRATIC_EASE_OUT)*/
+
+	            /*this.Player.SettingsPanel.AddTrigger(new LiveScribe.UI.Trigger(document.getElementById('mSettingsButton'), 'click', LiveScribe.UI.TrayControlTriggerType.BOTH));*/
+
+	            this.Player.PreviewStrokeToggle = new LiveScribe.UI.SettingsToggle(document.getElementById('mPreviewStroke'), LiveScribe.UI.SettingsToggleState.ON);
+	            this.Player.PreviewStrokeToggle.OnToggleChange = LiveScribe.Events.CreateDelegate(this.Player, this.Player.PreviewStrokeToggleChangeHandler);
+
+	            this.Player.AutoPageTurnToggle = new LiveScribe.UI.SettingsToggle(document.getElementById('mEnableAutoPage'), LiveScribe.UI.SettingsToggleState.ON);
+	            this.Player.AutoPageTurnToggle.OnToggleChange = LiveScribe.Events.CreateDelegate(this.Player, this.Player.AutoPageTurnToggleChangeHandler);
+
+	            this.Player.ColorPicker = new LiveScribe.UI.ColorPicker();
+	            this.Player.ColorPicker.RegisterEventHandler(new LiveScribe.Events.CustomEventHandler('player',
+                    LiveScribe.UI.ColorPickerEvent.COLOR_CHANGE,
+                    LiveScribe.Events.CreateDelegate(this.Player, this.Player.ColorPickerChangeHandler)));
+
+	            this.Player.ColorPicker.AddColorPickerItem(new LiveScribe.UI.ColorPickerItem(document.getElementById('foreground-color-0'), document.getElementById('background-color-0')));
+	            this.Player.ColorPicker.AddColorPickerItem(new LiveScribe.UI.ColorPickerItem(document.getElementById('foreground-color-1'), document.getElementById('background-color-1')));
+	            this.Player.ColorPicker.AddColorPickerItem(new LiveScribe.UI.ColorPickerItem(document.getElementById('foreground-color-2'), document.getElementById('background-color-2')));
+	            this.Player.ColorPicker.AddColorPickerItem(new LiveScribe.UI.ColorPickerItem(document.getElementById('foreground-color-3'), document.getElementById('background-color-3')));
+	            this.Player.ColorPicker.AddColorPickerItem(new LiveScribe.UI.ColorPickerItem(document.getElementById('foreground-color-4'), document.getElementById('background-color-4')));
+	            this.Player.ColorPicker.AddColorPickerItem(new LiveScribe.UI.ColorPickerItem(document.getElementById('foreground-color-5'), document.getElementById('background-color-5')));
+	            this.Player.ColorPicker.AddColorPickerItem(new LiveScribe.UI.ColorPickerItem(document.getElementById('foreground-color-6'), document.getElementById('background-color-6')));
+
+
+	            this.Player.ThumbnailPaneOpenButton = new LiveScribe.UI.ButtonControl(document.getElementById('mThumbnailPaneOpen'));
+	            this.Player.ThumbnailPaneCloseButton = new LiveScribe.UI.ButtonControl(document.getElementById('mThumbnailPaneClose'));
+	            this.Player.ThumbnailPane = new LiveScribe.UI.Panel('', this.Player.ThumbnailPaneOpenButton, this.Player.ThumbnailPaneCloseButton);
+
+	            this.Player.PlayButton = new LiveScribe.UI.ButtonControl(document.getElementById('mPlayButton'));
+	            this.Player.PlayButton.OnButtonClick = LiveScribe.Events.CreateDelegate(this.Player, this.Player.PlayButtonClickHandler);
+	            this.Player.RegisterEventHandler(new LiveScribe.Events.CustomEventHandler('PlayButtonPlayHandler', LiveScribe.PlayerEvents.PLAY, LiveScribe.Events.CreateDelegate(this.Player.PlayButton, this.Player.PlayButton.Hide)));
+	            this.Player.RegisterEventHandler(new LiveScribe.Events.CustomEventHandler('PlayButtonPauseHandler', LiveScribe.PlayerEvents.PAUSE, LiveScribe.Events.CreateDelegate(this.Player.PlayButton, this.Player.PlayButton.Display)));
+	            this.Player.RegisterEventHandler(new LiveScribe.Events.CustomEventHandler('PlayButtonStopHandler', LiveScribe.PlayerEvents.STOP, LiveScribe.Events.CreateDelegate(this.Player.PlayButton, this.Player.PlayButton.Display)));
+	            this.Player.RegisterEventHandler(new LiveScribe.Events.CustomEventHandler('PlayButtonLoadStartHandler', LiveScribe.PlayerEvents.LOAD, LiveScribe.Events.CreateDelegate(this.Player.PlayButton, this.Player.PlayButton.Hide)));
+	            this.Player.RegisterEventHandler(new LiveScribe.Events.CustomEventHandler('PlayButtonLoadCompleteHandler', LiveScribe.PlayerEvents.LOAD_COMPLETE, LiveScribe.Events.CreateDelegate(this.Player.PlayButton, this.Player.PlayButton.Display)));
+	            this.Player.RegisterEventHandler(new LiveScribe.Events.CustomEventHandler('PlayButtonDoneHandler', LiveScribe.PlayerEvents.DONE, LiveScribe.Events.CreateDelegate(this.Player.PlayButton, this.Player.PlayButton.Display)));
+
+	            this.Player.PauseButton = new LiveScribe.UI.ButtonControl(document.getElementById('mPauseButton'));
+	            this.Player.PauseButton.OnButtonClick = LiveScribe.Events.CreateDelegate(this.Player, this.Player.PauseButtonClickHandler);
+	            this.Player.RegisterEventHandler(new LiveScribe.Events.CustomEventHandler('PauseButtonPlayHandler', LiveScribe.PlayerEvents.PLAY, LiveScribe.Events.CreateDelegate(this.Player.PauseButton, this.Player.PauseButton.Display)));
+	            this.Player.RegisterEventHandler(new LiveScribe.Events.CustomEventHandler('PauseButtonPauseHandler', LiveScribe.PlayerEvents.PAUSE, LiveScribe.Events.CreateDelegate(this.Player.PauseButton, this.Player.PauseButton.Hide)));
+	            this.Player.RegisterEventHandler(new LiveScribe.Events.CustomEventHandler('PauseButtonStopHandler', LiveScribe.PlayerEvents.STOP, LiveScribe.Events.CreateDelegate(this.Player.PauseButton, this.Player.PauseButton.Hide)));
+	            this.Player.RegisterEventHandler(new LiveScribe.Events.CustomEventHandler('PauseButtonLoadStartHandler', LiveScribe.PlayerEvents.LOAD, LiveScribe.Events.CreateDelegate(this.Player.PauseButton, this.Player.PauseButton.Hide)));
+	            this.Player.RegisterEventHandler(new LiveScribe.Events.CustomEventHandler('PauseButtonLoadCompleteHandler', LiveScribe.PlayerEvents.LOAD_COMPLETE, LiveScribe.Events.CreateDelegate(this.Player.PauseButton, this.Player.PauseButton.Hide)));
+	            this.Player.RegisterEventHandler(new LiveScribe.Events.CustomEventHandler('PauseButtonDoneHandler', LiveScribe.PlayerEvents.DONE, LiveScribe.Events.CreateDelegate(this.Player.PauseButton, this.Player.PauseButton.Hide)));
+
+	            this.Player.ForwardButton = new LiveScribe.UI.ButtonControl(document.getElementById('mJumpForwardButton'));
+	            this.Player.ForwardButton.OnButtonClick = LiveScribe.Events.CreateDelegate(this.Player, this.Player.ForwardButtonClickHandler);
+
+	            this.Player.BackButton = new LiveScribe.UI.ButtonControl(document.getElementById('mJumpBackButton'));
+	            this.Player.BackButton.OnButtonClick = LiveScribe.Events.CreateDelegate(this.Player, this.Player.BackButtonClickHandler);
+
+	            this.Player.ProgressScrubber = new LiveScribe.UI.SliderScrubberControl(document.getElementById('mSliderBarScrubber'), document.getElementById('mSliderBar'));
+	            this.Player.ProgressScrubber.OnScrubberPositionChange = LiveScribe.Events.CreateDelegate(this.Player, this.Player.ScrubberPositionChangeHandler);
+	            this.Player.ProgressScrubber.OnScrubberMouseDown = LiveScribe.Events.CreateDelegate(this.Player, this.Player.ScrubberMouseDownHandler);
+	            this.Player.ProgressScrubber.OnScrubberMouseUp = LiveScribe.Events.CreateDelegate(this.Player, this.Player.ScrubberMouseUpHandler);
+	            this.Player.RegisterEventHandler(new LiveScribe.Events.CustomEventHandler('ProgressScrubberCompleteHandler', LiveScribe.PlayerEvents.DONE, LiveScribe.Events.CreateDelegate(this.Player.ProgressScrubber, this.Player.ProgressScrubber.PlaybackCompleteHandler)));
+
+	            this.Player.ProgressSlider = new LiveScribe.UI.SliderControl(document.getElementById('mSliderBar'), document.getElementById('mSliderBarProgress'));
+	            this.Player.ProgressSlider.OnSliderPositionChange = LiveScribe.Events.CreateDelegate(this.Player, this.Player.SliderPositionChangeHandler);
+	            this.Player.RegisterEventHandler(new LiveScribe.Events.CustomEventHandler('ProgressSliderCompleteHandler', LiveScribe.PlayerEvents.DONE, LiveScribe.Events.CreateDelegate(this.Player.ProgressSlider, this.Player.ProgressSlider.PlaybackCompleteHandler)));
+
+	            this.Player.PlaybackProgressIndicator = new LiveScribe.UI.PlaybackProgressIndicatorControl(document.getElementById('mAudioPositionText'), document.getElementById('mAudioDurationText'));
+	            this.Player.RegisterEventHandler(new LiveScribe.Events.CustomEventHandler('ProgressIndicatorCompleteHandler', LiveScribe.PlayerEvents.DONE, LiveScribe.Events.CreateDelegate(this.Player.PlaybackProgressIndicator, this.Player.PlaybackProgressIndicator.PlaybackCompleteHandler)));
+
+	            this.Player.PageIndicator = new LiveScribe.UI.PageIndicatorControl(document.getElementById('mCurrentSessionPageText'), document.getElementById('mTotalSessionPageText'));
+
+	            this.Player.KeyControls = new LiveScribe.UI.KeyControls();
+	            this.Player.KeyControls.OnPlay = LiveScribe.Events.CreateDelegate(this.Player, this.Player.PlayButtonClickHandler);
+	            this.Player.KeyControls.OnPause = LiveScribe.Events.CreateDelegate(this.Player, this.Player.PauseButtonClickHandler);
+	            this.Player.KeyControls.OnForward = LiveScribe.Events.CreateDelegate(this.Player, this.Player.ForwardButtonClickHandler);
+	            this.Player.KeyControls.OnBack = LiveScribe.Events.CreateDelegate(this.Player, this.Player.BackButtonClickHandler);
+	            this.Player.KeyControls.OnPageForward = LiveScribe.Events.CreateDelegate(this.Player, this.Player.PageForwardButtonClickHandler);
+	            this.Player.KeyControls.OnPageBack = LiveScribe.Events.CreateDelegate(this.Player, this.Player.PageBackButtonClickHandler);
+	            //this.Player.KeyControls.OnMuteToggle = LiveScribe.Events.CreateDelegate(this.Player, this.Player.MuteHandler);
+	            //this.Player.KeyControls.OnFullScreenToggle = LiveScribe.Events.CreateDelegate(this.Player, this.Player.FullScreenToggleHandler);
+	            //this.Player.KeyControls.OnPageReload = LiveScribe.Events.CreateDelegate(this.Player, this.Player.PageReloadHandler);
+
+	            this.Player.CanvasController = new LiveScribe.UI.CanvasControl(document.getElementById('mMainCanvas'), document.getElementById('mBackgroundCanvas'), document.getElementById('mCanvasContainer'));
+	            this.Player.CanvasController.OnCanvasClick = LiveScribe.Events.CreateDelegate(this.Player, this.Player.CanvasClickHandler);
+
+              this.Player.OnLoadError = function(err) {
+                function resetField(fld) {
+                    $(fld).wrap('<form>').parent('form').trigger('reset');
+                    $(fld).unwrap();
+                }
+
+                this.AlertModal.Show(err.message);
+
+                // Restore prior state
+                this.MessageModule.Show();
+                this.FileLoadModule.Show();
+                this.BusyModal.Hide();
+
+                this.AttachNewFileLoader(); // Attaching a new file loader is needed. Otherwise, loading of valid PDFs after invalid PDF results in an error
+                resetField('#file-load-input-element');
+              }
+
+              this.Player.PlaySpeed = function(newSpeed) {
+                $("#mPlaySpeed .selected[data-speed]").removeClass('selected');
+                $("#mPlaySpeed [data-speed='" + newSpeed + "']").addClass('selected');
+
+                var newSpeed = this.AudioPlayer.PlaybackRate(newSpeed);
+                this.AnimationController.AnimationRate(newSpeed);
+              }
+
+              this.Player.AttachNewFileLoader();
+
+              if (this.Player.WebContext.GetPencastType() == LiveScribe.PencastType.REMOTE_PDF) {
+                this.Player.BusyModal.Show();
+                LiveScribe.Net.GetRemoteResourceAsArrayBuffer(this.Player.WebContext.QueryString, LiveScribe.Events.CreateDelegate(this.Player, function(response) {
+                  this.LocalFile = response;
+                  this.FileLoadModule.Hide();
+                  this.LoadPencast();
+                }));
+              }
+
+	            gLS_CurrentEnv = 4;
+	            this.Player.Init();
+	        };
+
+
+
+
+	        var page = new LiveScribe.Page();
+
+	    </script>
+	
+
+</body></html>
