@@ -78,7 +78,7 @@ LiveScribe.LocalPdfPencast.prototype.CompleteDataLoading = function () {
         setTimeout(LiveScribe.Events.CreateDelegate(this, this.OnDataLoadComplete), 25);
     }
 
-    this.trackLaunchedEvent();
+    // this.trackLaunchedEvent();
 
     setTimeout(LiveScribe.Events.CreateDelegate(this, this.GetAudio), 25);
 }
@@ -512,14 +512,14 @@ LiveScribe.LocalPdfPencast.prototype.GetPageBackgroundImage = function (pageAddr
 LiveScribe.LocalPdfPencast.prototype.trackLaunchedEvent = function() {
 
     // Pencast is 'launched', track the event..
-    mixpanel.track("Pencast_Launched", {
-        "source": "Local PDF File",
-        "audioAndStrokes": !this.IsPaperless && this.HasAudio,
-        "audioOnly": this.IsPaperless,
-        "strokesOnly": !this.HasAudio,
-        "numberOfPauses": this.AudioFileDataList.length - 1,
-        "duration": TimeDuration2String(this.Duration)
-    });
+    // mixpanel.track("Pencast_Launched", {
+    //     "source": "Local PDF File",
+    //     "audioAndStrokes": !this.IsPaperless && this.HasAudio,
+    //     "audioOnly": this.IsPaperless,
+    //     "strokesOnly": !this.HasAudio,
+    //     "numberOfPauses": this.AudioFileDataList.length - 1,
+    //     "duration": TimeDuration2String(this.Duration)
+    // });
 }
 
 

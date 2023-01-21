@@ -311,9 +311,9 @@ LiveScribe.Player.prototype.Play = function (aTime) {
     this.AnimationController.Play();
 
 
-    if (!this.isPlayedEventTracked) {
-        this.trackPlayedEvent();
-    }
+    // if (!this.isPlayedEventTracked) {
+    //     this.trackPlayedEvent();
+    // }
 };
 
 LiveScribe.Player.prototype.Pause = function () {
@@ -992,7 +992,7 @@ LiveScribe.Player.prototype.CanvasClickHandler = function (coordinate) {
         for (var pointIndex = 0; pointIndex < points.length; pointIndex++) {
             if (coordinate.PositionX >= points[pointIndex].X - 100 && coordinate.PositionX <= points[pointIndex].X + 100) {
                 if (coordinate.PositionY >= points[pointIndex].Y - 100 && coordinate.PositionY <= points[pointIndex].Y + 100) {
-                    this.trackInkClickedEvent();
+                    // this.trackInkClickedEvent();
                     var timeOffset = 0;
                     if (stroke.AudioStrokeIndex != null) { timeOffset = stroke.TimeOffset; }
                     else { timeOffset = stroke.TimeOffset - (this.CurrentPage.Annotations[stroke.AnnotationIndex].Start - this.CurrentPage.Annotations[stroke.AnnotationIndex].CorrectedStart); }
@@ -1026,20 +1026,20 @@ LiveScribe.Player.prototype.CanvasMouseMoveHandler = function (e) {};
 LiveScribe.Player.prototype.trackPlayedEvent = function() {
 
     // Pencast is 'played', track the event..
-    mixpanel.track("Pencast_Played", {
-        "source": "Local PDF File",
-        "duration": TimeDuration2String(this.Pencast.Duration),
-        "pageCount": this.Pencast.Pages.Count(),
-        "numberOfPauses": this.Pencast.AudioFileDataList.length - 1,
-        "sessionCount": this.Pencast.Sessions.Count()
-    });
+    // mixpanel.track("Pencast_Played", {
+    //     "source": "",
+    //     "duration": -1337,
+    //     "pageCount": -1337,
+    //     "numberOfPauses": -1337,
+    //     "sessionCount": -999
+    // });
     this.isPlayedEventTracked = true;
 }
 
 LiveScribe.Player.prototype.trackInkClickedEvent = function() {
 
     // user clicked on the active ink..
-    mixpanel.track("Ink_Clicked");
+    // mixpanel.track("Ink_Clicked");
 }
 
 
